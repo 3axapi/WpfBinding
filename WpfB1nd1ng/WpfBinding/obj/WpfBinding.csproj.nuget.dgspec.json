@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfBinding\\WpfBinding.csproj": {}
+    "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfB1nd1ng\\WpfBinding\\WpfBinding.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfBinding\\WpfBinding.csproj": {
+    "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfB1nd1ng\\WpfBinding\\WpfBinding.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfBinding\\WpfBinding.csproj",
+        "projectUniqueName": "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfB1nd1ng\\WpfBinding\\WpfBinding.csproj",
         "projectName": "WpfBinding",
-        "projectPath": "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfBinding\\WpfBinding.csproj",
+        "projectPath": "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfB1nd1ng\\WpfBinding\\WpfBinding.csproj",
         "packagesPath": "C:\\Users\\IV-TIE_23\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfBinding\\obj\\",
+        "outputPath": "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfB1nd1ng\\WpfBinding\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IV-TIE_23\\AppData\\Roaming\\NuGet\\NuGet.Config",

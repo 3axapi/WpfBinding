@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gIbjGhnlTYUxW6Xoxk47VZ/s6fx839QpAnsKHWaqzdlAxE0E/+71z3I++D/d+viAg/Kc2KjiZ082PchRyAbKGA==",
+  "dgSpecHash": "iAwIPcX0auKIV3d3KJo1hOhMtCdZoWo0KYMDvUPRqOG2IZ+vmeFk9bimGUiZwEkvF93DiAuofivOLMKqhsY+Aw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IV-TIE_23\\Documents\\GitHub Repositories\\WpfBinding\\WpfBinding\\WpfBinding.csproj",
+  "projectFilePath": "C:\\Users\\IV-TIE_23\\source\\repos\\WpfBinding\\WpfBinding\\WpfBinding.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IV-TIE_23\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\IV-TIE_23\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

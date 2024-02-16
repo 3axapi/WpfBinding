@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
@@ -23,6 +24,26 @@ namespace WpfBinding
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void imageLoad(object sender, RoutedEventArgs e)
+        {
+            string imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg| PNG files(*.png)|*.png| All files(*.*)|*.*|";
+
+                if (dialog.ShowDialog() == true) 
+                {
+                    imageLocation = dialog.FileName;
+                    imagealert.Source = {imageLocation};
+                }
+            } 
+            catch (Exception)
+            {
+                MessageBox.Show("En Error Occured");
+            }
         }
     }
 }

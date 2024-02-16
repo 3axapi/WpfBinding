@@ -7,6 +7,39 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" Margin="15">
+            <StackPanel Width="430" Margin="15">
+                <TextBlock Text="ID"/>
+                <TextBox x:Name="idinput" Margin="0 0 0 10"/>
+
+                <TextBlock Text="Name"/>
+                <TextBox x:Name="nameinput" Margin="0 0 0 10"/>
+
+                <TextBlock Text="Age"/>
+                <TextBox x:Name="ageinput" Margin="0 0 0 10"/>
+
+                <Button Click="imageLoad" Content="Find An Image"/>
+            </StackPanel>
+            <StackPanel Width="270" Margin="15">
+                <TextBlock Text="User Review" HorizontalAlignment="Center" FontWeight="Bold" FontSize="30" Margin="15"/>
+                <TextBlock Text="ID review:"/>
+                <TextBlock Text="{Binding ElementName=idinput, Path=Text}"/>
+                <Border BorderBrush="Black" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
+
+                <TextBlock Text="Name review:"/>
+                <TextBlock Text="{Binding ElementName=nameinput, Path=Text}"/>
+                <Border BorderBrush="Black" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
+
+                <TextBlock Text="Age review:"/>
+                <TextBlock Text="{Binding ElementName=ageinput, Path=Text}"/>
+                <Border BorderBrush="Black" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
+
+                <TextBlock  Text="Avatar review:"/>
+
+                <Border BorderBrush="Black" BorderThickness="1" Margin="10">
+                    <Image x:Name="imagealert" Height="140"/>
+                </Border>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
