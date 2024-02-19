@@ -5,39 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBinding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0, -1" EndPoint="1,1">
+                <GradientStop Color="#606060" Offset="0"/>
+                <GradientStop Color="#1e281e" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <StackPanel Orientation="Horizontal" Margin="15">
-            <StackPanel Width="430" Margin="15">
-                <TextBlock Text="ID"/>
-                <TextBox x:Name="idinput" Margin="0 0 0 10"/>
+            <StackPanel>
+                <StackPanel Width="430" Margin="15">
+                    <TextBlock Text="ID" Foreground="White" FontWeight="Bold"/>
+                    <TextBox x:Name="idinput" BorderBrush="#46aa1e" Background="#606060" BorderThickness="2" Foreground="White" Margin="0 0 0 10"/>
 
-                <TextBlock Text="Name"/>
-                <TextBox x:Name="nameinput" Margin="0 0 0 10"/>
+                    <TextBlock Text="Name" Foreground="White" FontWeight="Bold"/>
+                    <TextBox x:Name="nameinput" BorderBrush="#46aa1e" Background="#606060" BorderThickness="2" Foreground="White" Margin="0 0 0 10"/>
 
-                <TextBlock Text="Age"/>
-                <TextBox x:Name="ageinput" Margin="0 0 0 10"/>
+                    <TextBlock Text="Age" Foreground="White" FontWeight="Bold"/>
+                    <TextBox x:Name="ageinput" BorderBrush="#46aa1e" Background="#606060" BorderThickness="2" Foreground="White" Margin="0 0 0 10"/>
 
-                <Button Click="imageLoad" Content="Find An Image"/>
+                    <Button Click="imageLoad" Content="Find An Image" BorderBrush="#606060" Background="#1e1e1e" Foreground="White"/>
+                </StackPanel>
+                <StackPanel>
+                    <Border BorderBrush="#46aa1e" BorderThickness="1" />
+                    <TextBlock Text="GataGrid" HorizontalAlignment="Center" Foreground="White"  FontWeight="Bold" FontSize="25"  Margin="0 10"/>
+                    <Button Click="saveGrid" Content="Save Data" BorderBrush="#606060" Background="#1e1e1e" Foreground="White" />
+                    <Button Click="loadGrid" Content="Show Grid" BorderBrush="#606060" Background="#1e1e1e" Foreground="White" Margin="0 10"/>
+                    <Button Click="clearGrid" Content="Clear Grid" BorderBrush="#606060" Background="#1e1e1e" Foreground="White"/>
+                    <Button Click="clearDataBase" Content="Clear DataBase" BorderBrush="#606060" Background="#1e1e1e" Foreground="White" Margin="0 10"/>
+                    <DataGrid x:Name="mainDataGrid" AutoGenerateColumns="False" Background="AliceBlue">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="30" />
+                            <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="100"/>
+                            <DataGridTextColumn Header="Age" Binding="{Binding Age}" Width="40"/>
+                            <DataGridTextColumn Header="SRC" Binding="{Binding SRC}" Width="288"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
             </StackPanel>
             <StackPanel Width="270" Margin="15">
-                <TextBlock Text="User Review" HorizontalAlignment="Center" FontWeight="Bold" FontSize="30" Margin="15"/>
-                <TextBlock Text="ID review:"/>
-                <TextBlock Text="{Binding ElementName=idinput, Path=Text}"/>
-                <Border BorderBrush="Black" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
+                <TextBlock Text="User Review" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Margin="15"/>
+                <TextBlock Text="ID review:" Foreground="White" FontWeight="Bold"/>
+                <TextBlock x:Name="idalert" Text="{Binding ElementName=idinput, Path=Text}" Foreground="White"/>
+                <Border BorderBrush="#46aa1e" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
 
-                <TextBlock Text="Name review:"/>
-                <TextBlock Text="{Binding ElementName=nameinput, Path=Text}"/>
-                <Border BorderBrush="Black" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
+                <TextBlock Text="Name review:" Foreground="White" FontWeight="Bold"/>
+                <TextBlock x:Name="namealert" Text="{Binding ElementName=nameinput, Path=Text}" Foreground="White"/>
+                <Border BorderBrush="#46aa1e" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
 
-                <TextBlock Text="Age review:"/>
-                <TextBlock Text="{Binding ElementName=ageinput, Path=Text}"/>
-                <Border BorderBrush="Black" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
+                <TextBlock Text="Age review:" Foreground="White" FontWeight="Bold"/>
+                <TextBlock x:Name="agealert" Text="{Binding ElementName=ageinput, Path=Text}" Foreground="White"/>
+                <Border BorderBrush="#46aa1e" BorderThickness="0 0 0 1" Margin="0 0 0 10"/>
 
-                <TextBlock  Text="Avatar review:"/>
+                <TextBlock  Text="Avatar review:" Foreground="White" FontWeight="Bold"/>
 
-                <Border BorderBrush="Black" BorderThickness="1" Margin="10">
-                    <Image x:Name="imagealert" Height="140"/>
+                <Border BorderBrush="#46aa1e" BorderThickness="2" CornerRadius="10" Margin="10">
+                    <Image x:Name="imagealert" Height="140" Width="Auto"/>
                 </Border>
             </StackPanel>
         </StackPanel>

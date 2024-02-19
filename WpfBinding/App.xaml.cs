@@ -22,7 +22,7 @@ namespace WpfBinding
             using (SQLiteConnection connection = new SQLiteConnection(ConnectionString))
             {
                 connection.Open();
-                string query = "CREATE TABLE IF NOT EXISTS Users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, age INTEGER NOT NULL )";
+                string query = "CREATE TABLE IF NOT EXISTS Users ( id INTEGER, name TEXT, age INTEGER, src TEXT )";
 
                 using (SQLiteCommand command = new SQLiteCommand(query, connection))
                 {
